@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/nauji2024/static/css/main.e2f44707.css",
+    "main.js": "/nauji2024/static/js/main.53fdd9ea.js",
+    "static/js/787.8cf52469.chunk.js": "/nauji2024/static/js/787.8cf52469.chunk.js",
+    "static/media/cat.png": "/nauji2024/static/media/cat.b5c0908e93d59a24daf5.png",
+    "index.html": "/nauji2024/index.html",
+    "main.e2f44707.css.map": "/nauji2024/static/css/main.e2f44707.css.map",
+    "main.53fdd9ea.js.map": "/nauji2024/static/js/main.53fdd9ea.js.map",
+    "787.8cf52469.chunk.js.map": "/nauji2024/static/js/787.8cf52469.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2f44707.css",
+    "static/js/main.53fdd9ea.js"
+  ]
+}
