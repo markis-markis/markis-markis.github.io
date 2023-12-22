@@ -9,6 +9,7 @@
   color: white;
   text-align: center;
   overflow-x: hidden;
+  padding-top: 8rem;
 }
 
 .App > * {
@@ -17,6 +18,16 @@
 
 ol {
   margin-bottom: 4rem;
+  padding-left: 0rem;
+}
+
+.cat-image {
+  max-width: 100vw !important;
+}
+
+.desc {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
 }
 
 .header {
@@ -49,6 +60,8 @@ ol {
   width: 90%;
 
   margin-bottom: 2rem;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .center {
@@ -67,7 +80,7 @@ ol {
 
 .separate {
   border-top: 4px solid white;
-  width: 400%;
+  width: 300rem;
   margin-left: -100rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -77,12 +90,38 @@ ol {
   font-size: 20px;
 }
 
+.footer-info {
+  margin-bottom: 2rem;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
 ol {
   text-align: left;
 }
 
 p {
   text-align: justify;
+}
+
+.link {
+  color: aquamarine;
+}
+
+.link:hover {
+  color: aqua;
+}
+
+.waitlist {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 /* todo: asf */

@@ -2,6 +2,16 @@ import "./App.css";
 import logo from "./cat.png";
 
 function App() {
+  const date = new Date();
+
+  if (date > new Date("2023-12-23 12:00:00")) {
+    return (
+      <div className="waitlist">
+        <h1>Prašome sugrįžti 12:00</h1>
+      </div>
+    );
+  }
+
   return (
     <div className="App">
       <h1 className="header">
@@ -9,10 +19,10 @@ function App() {
         <br />
         NAUJŲ METŲ BALIUS
       </h1>
-      <img src={logo} alt="" />
+      <img className="cat-image" src={logo} alt="" />
       <div className="content">
         <div>
-          <p>
+          <p className="desc">
             Gruodžio 31d. 19:00 Grafas Tutas ir Ledi Pupa visus kviečia
             pasislėpti po lova fejerverkų apsupty ir pasidžiaugti dar viena
             neįvykusia pasaulio pabaiga!
@@ -20,7 +30,7 @@ function App() {
         </div>
         <div className="separate" />
         <div className="party">
-          <small>Vakarėlio tema</small>
+          <h3>🌟Vakarėlio tema🌟</h3>
           <h1>NAUJAMETINIS TĖVŲ BALIUS</h1>
           <div className="party-details">
             <h3>Pasiruošimas vakarėliui:</h3>
@@ -36,15 +46,18 @@ function App() {
               <li>Atsinešti bent vieną užkandį iš savo nuotraukos.</li>
             </ol>
             <div className="card">
-              <h4>SVARBU</h4>
+              <h4>🚨SVARBU🚨</h4>
               <p>Būtina turėti nuotrauką įrodančią jūsų įkvėpimo šaltinį.</p>
             </div>
 
             <div className="card">
-              <h4>SVARBIAU</h4>
-              <p>Balta mišrainė rezervuojama pirmam parašiusiam</p>
+              <h4>🚨🚨🚨SVARBIAU🚨🚨🚨</h4>
+              <p>
+                Balta mišrainė rezervuojama pirmam "Kalėdos Vileišy" chat'e
+                parašiusiam
+              </p>
               <h3 className="important">BALTA MIŠRAINĖ</h3>
-              <p>(balta mišrainė privalo būti nuotraukoje).</p>
+              <p>(balta mišrainė privalo būti nuotraukoje)</p>
             </div>
 
             <p>
@@ -53,16 +66,23 @@ function App() {
           </div>
           <div className="separate" />
           <div>
-            <h2>Vakaro žaidimas</h2>
+            <h3>🎲Vakaro žaidimas🎲</h3>
             <h1>PREZENTACIJŲ RINGAS</h1>
             <p className="center">Daugiau informacijos bus paskelbta vėliau.</p>
           </div>
           <div className="separate" />
           <div>
             <p>
-              Lauksime jūsų <b>Ateities g. 1G-19</b>, parkingas už namo
-              pravažiavus pro Alyną ir soliarumą. Nakvynės skaičius ribotas. Už
-              aštrius kačiukų nagus neatsakome.
+              Lauksime jūsų{" "}
+              <a
+                className="link"
+                href="https://maps.app.goo.gl/GnKLVT1LCmEYhbRD8"
+              >
+                {/* <b>Ateities g. 1G-19</b> */}
+                <b>Ateities g. 1G-19</b>
+              </a>
+              , parkingas už namo pravažiavus pro Alyną ir soliarumą. Nakvynės
+              skaičius ribotas. Už aštrius kačiukų nagus neatsakome.
             </p>
             <iframe
               className="iframe"
@@ -77,8 +97,18 @@ function App() {
           </div>
           <div className="separate" />
           <div className="footer">
-            <p>Renginio organizatoriai: Tutas ir Pupa</p>
-            <p>Renginio remėjai: Tuto ir Pupos vergai</p>
+            <div className="footer-info">
+              <p>Renginio organizatoriai:</p>
+              <p>
+                <b>Tutas ir Pupa 🙀😻</b>
+              </p>
+            </div>
+            <div className="footer-info">
+              <p>Renginio remėjai:</p>
+              <p>
+                <b>Tuto ir Pupos vergai 👫</b>
+              </p>
+            </div>
           </div>
         </div>
       </div>
