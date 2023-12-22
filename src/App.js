@@ -4,7 +4,7 @@ import logo from "./cat.png";
 function App() {
   const date = new Date();
 
-  if (date > new Date("2023-12-23 12:00:00")) {
+  if (date < new Date("2023-12-23 12:00:00")) {
     return (
       <div className="waitlist">
         <h1>Prašome sugrįžti 12:00</h1>
