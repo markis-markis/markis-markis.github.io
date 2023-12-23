@@ -2,19 +2,6 @@ import "./App.css";
 import logo from "./cat.png";
 
 function App() {
-  const date = new Date();
-
-  console.log(date);
-  console.log(new Date("2023-12-23 12:00:00"));
-
-  if (date < new Date("2023-12-23 12:00:00")) {
-    return (
-      <div className="waitlist">
-        <h1>Prašome sugrįžti 12:00</h1>
-      </div>
-    );
-  }
-
   return (
     <div className="App">
       <h1 className="header">
